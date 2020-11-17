@@ -32,12 +32,12 @@ class TennisGame
             $minusResult = $m_scode1-$m_scode2;
             if ($minusResult == 1) $this->score = "Advantage player1";
             elseif ($minusResult == -1) $this->score = "Advantage player2";
-            elseif ($minusResult >= 2) $this->score = "Win for pkayer1";
-            else $this->score = "win for pjayer2"''
+            elseif ($minusResult >= 2) $this->score = "Win for player1";
+            else $this->score = "win for player2";
         }else{
-            for($I = 1; $I < 3; $I++){
-                if($I == 1) $tempScore = $m_scode1;
-                else {$this->score = "_"; $tempScore = $m_scode2}
+            for($i = 1; $i < 3; $i++){
+                if($i == 1) $tempScore = $m_scode1;
+                else {$this->score = "_"; $tempScore = $m_scode2;}
                 switch($tempScore)
                 {
                     case 0:
